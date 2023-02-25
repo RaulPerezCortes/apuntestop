@@ -1,0 +1,131 @@
+
+
+.home section{
+    border-bottom: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+
+}
+
+.home section p{
+    
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.home h2{
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.botonhome{
+    text-decoration: none;
+    padding: 0.5rem 8rem;
+    color: black;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: rgb(253, 253, 100);
+    transition: all 500ms;
+}
+
+.botonhome:hover{
+    background-color: rgb(255, 230, 0);
+}
+
+.trabajar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.trabajar div{
+    margin: 1rem;
+    margin-top: 3rem;
+    padding: 1rem;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.trabajar h3{
+    font-size: 2rem;
+    
+}
+
+.trabajar p{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: rgb(220, 220, 220);
+}
+
+#contacto{
+    border: none;
+
+}
+
+.ajustar{
+    text-align: center;
+    width: 60%;
+    color: rgb(220, 220, 220);
+}
+
+.contacto{
+    padding-bottom: 5rem;
+}
+
+
+
+@media (max-width: 1050px){
+
+    .botonhome{
+        padding:0.5rem 2rem;
+    }
+    .trabajar{
+        flex-wrap: wrap;
+    }
+
+    .ajustar{
+        width: 100%;
+    }
+    
+    .paginas p{
+        text-align: center;
+        margin: 2rem 2rem;
+    }
+    
+}
+
+@media (max-width: 400px){
+
+    .botonhome{
+        padding:0.5rem 1rem;
+    }
+    .trabajar{
+        flex-wrap: wrap;
+    }
+
+    .ajustar{
+        width: 100%;
+    }
+    
+    .paginas p{
+        text-align: center;
+        margin: 2rem 1rem;
+    }
+
+    .home h2{
+        font-size: 2.5rem;
+    }
+
+    .tragbajar div{
+        margin: 0;
+    }
+
+    .home section{
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+    }
+    
+}

@@ -1,0 +1,61 @@
+.paginas{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.paginas h1{
+    margin: 0 1rem;
+    font-size: 4rem;
+    margin:1.5rem auto;
+    text-align: center;
+}
+
+.paginas h2{
+font-size: 2.5rem;
+margin: 1rem 2rem;
+text-decoration: underline;
+}
+
+.paginas p{
+    text-align: center;
+    margin: 2rem 4rem;
+    margin-top: 0rem;
+    color: rgb(220, 220, 220);
+}
+
+.paginas ul{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-position: inside;
+    
+}
+
+.paginas li{
+ text-align: left;
+ font-size: 1.3rem;
+}
+
+
+
+@media (max-width: 950px){
+    .paginas p{
+        margin: 2rem;
+    }
+    .paginas h1{
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .paginas h2{
+        font-size: 1.6rem;
+    }
+
+    .paginas h1{
+        font-size: 2.5rem;
+    }
+}

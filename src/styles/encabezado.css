@@ -1,0 +1,122 @@
+.encabezado{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+.divlogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.logo{
+    margin-left: 3rem;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    transition: all 700ms;
+
+}
+
+.mostrarnav{
+    display: none;
+}
+
+.logo:hover{
+    transform: scale(1.2);
+}
+
+.divboton{
+    margin-right: 3rem;
+    font-size: 0.85rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonheader {
+    text-decoration: none;
+    color: white;
+    margin-left: 0.3rem;
+    padding: 0.6rem;
+    transition: all 1000ms;
+    text-align: left;
+}
+
+.botonheader:hover{
+    background-color: rgb(255, 0, 204);
+    border-radius: 20px;
+}
+
+.carrito{
+    font-size: larger;
+}
+
+
+
+@media (max-width: 1000px){
+    .encabezado{
+        flex-direction: column;
+    }
+
+    
+
+    .logo{
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 770px) {
+
+    .logo{
+        margin-right: 8rem;
+    }
+    .mostrarnav{
+        display: block;
+        position: absolute;
+        right: 0;
+        margin-left: 2rem;
+        margin-right: 4rem;
+        font-size: 1rem;
+    }
+
+    .divboton{
+        display: none;
+    }
+
+    .mostrar{
+        font-size: 1rem;
+        padding: 0.2rem;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        height: 100vh;
+        opacity: 0.9;
+    }
+
+    .mostrar .botonheader{
+        text-align: left;
+    }
+
+
+}
+
+
+
