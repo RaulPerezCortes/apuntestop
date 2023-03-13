@@ -14,3 +14,23 @@
     margin: 0 2rem;
     font-size: 0.7rem;
 }
+
+.fotos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.fotos img{
+    margin: 0 1rem;
+    width: 30px
+}
+
+.fotos a{
+    transition: all 600ms;
+}
+
+.fotos a:hover{
+    transform: scale(1.1);
+}

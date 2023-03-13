@@ -1,0 +1,45 @@
+.creador{
+    margin: 1rem;
+}
+
+.creador h1{
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.creador h2{
+    text-align: center;
+    padding: 2rem 0;
+    text-decoration: underline;
+}
+
+
+.listarcontenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    padding: 1rem;
+
+}
+
+.listarcontenido h3{
+    font-size: 2rem;
+}
+
+.pagcreadorapuntes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.pagcreadorapuntes div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}

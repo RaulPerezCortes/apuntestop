@@ -13,6 +13,23 @@
     margin-bottom: 2rem;
 }
 
+.autor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.autor p{
+    margin: 0;
+    padding: 0;
+}
+
+.autor .documento{
+    margin: 0;
+}
+
 .subapuntes p{
     text-align: center;
     color: rgb(197, 197, 197);
@@ -20,6 +37,11 @@
 }
 
 .subapuntes strong{
+    margin-left: 0.2rem;
+    font-size: 2.5rem;
+}
+
+.subapuntes .link{
     margin-left: 0.2rem;
     font-size: 2.5rem;
 }
@@ -36,8 +58,6 @@
     max-width: 100%;
 }
 
-
-
 .documento{
     background-color: yellow;
     text-decoration: none;
@@ -50,10 +70,26 @@
 .subapuntes a{
     margin-bottom: 1rem;
 
-}
+} 
 
 .documento:hover{
-    
     background-color: orange;
 }
+
+.orderlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.orderlist li{
+    font-size: 2rem;
+}
+
+@media (max-width: 1000px) {
+    .subapuntes h1{
+        font-size: 2rem;
+    }
+}
+
 

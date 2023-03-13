@@ -4,7 +4,7 @@ html{
 }
 
 body{
-    padding-bottom: 6rem;
+    padding-bottom: 15rem;
     position: relative;
     min-height: 100vh;
     margin: 0;
@@ -38,8 +38,19 @@ p{
     padding: 0;
 }
 
-@media (max-width: 950px){
+
+
+@media (max-width: 1100px){
     body{
         padding-top: 7rem;
     }
 }
+
+@media (max-width: 770px){
+    body{
+        padding-top: 4rem;
+    }
+}
+
+
+

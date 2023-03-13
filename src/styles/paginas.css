@@ -50,6 +50,29 @@ text-decoration: underline;
     }
 }
 
+.pago{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.pago li{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pago img{
+    width: 150px;
+    margin-bottom: 0.5rem;
+}
+
 @media (max-width: 400px) {
     .paginas h2{
         font-size: 1.6rem;

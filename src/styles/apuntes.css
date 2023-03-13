@@ -13,40 +13,48 @@
 }
 
 .elegir input{
-    width: 50%;
-    padding: 0.3rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0.6rem;
     font-size: 1rem;
     margin: 1rem;
+    width: 400px;
 }
 
 .elegir select{
+    border: 1px solid white;
+    border-radius: 10px;
     margin: 1rem;
     font-size: 1rem;
     padding: 0.3rem;
 }
 .apuntes{
-    margin: 2rem;
+    margin: 3rem 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
 }
+
+
 
 .apunte{
     padding: 1rem;
     margin: 0.3rem;
-    background-color: rgb(241, 253, 255);
+    background-color: rgb(224, 224, 224);
     color: black;
     border: 2px solid black;
     border-radius: 50px;
-    min-width: 230px;
-
+    width: 280px;
+    animation: apuntes 1s;
 }
+
 
 .apunte h1{
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 0.4rem;
+    margin-bottom: 1rem;
 }
 
 .apunte li{
@@ -83,7 +91,8 @@
     flex-wrap: wrap;
 }
 
-.apuntes .link{
+ .link{
+    text-align: center;
     color: black;
     text-decoration: none;
     background-color: yellow;
@@ -93,19 +102,34 @@
     border-radius: 15px;
     transition: all 500ms;
 }
-
-.apuntes .link:hover{
-    background-color: rgb(255, 187, 0);
+.link:hover{
+    background-color: orange;
 }
 
 .no{
     margin-top: 5rem;
     margin-bottom: 5rem;
-    font-size: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 3rem;
     text-align: center;
     color: red;
 }
 
+.autorapunte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.azul{
+    background-color: rgb(95, 95, 255);
+}
+
+.azul:hover{
+    background-color: rgb(51, 51, 187);
+}
 
 @media (max-width: 500px){
     .no{
@@ -114,5 +138,9 @@
 
     .titulo{
         font-size: 3rem;
+    }
+
+    .elegir input{
+        width: 250px;
     }
 }

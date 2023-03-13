@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { apuntes } from "../diccionarios/apuntes";
+import { creadores } from "../diccionarios/creadores";
 import { Link } from "react-router-dom";
 import '../styles/apuntes.css'
 
@@ -51,6 +52,7 @@ export const Apuntes = () => {
       </select>
       <select name="instituciones" id="" onChange={(e) => setInstituciones(e.target.value)}>
         <option value="">TODAS LAS INSTITUCIONES</option>
+        <option value="instituto">INSTITUTO</option>
         <option value="universidad">UNIVERSIDAD</option>
         <option value="oposiciones">OPOSICIONES</option>
       </select>
@@ -63,7 +65,17 @@ export const Apuntes = () => {
             return (
               <div className="apunte" key={indice}>
                 <h1>{contenido.nombre}</h1>
-                <div><p>POR: </p><strong>{contenido.autor}</strong></div>
+
+                <div className="autorapunte">
+                  {creadores.map((creador, indicecreador)=>{
+                    if(contenido.autor == creador.nombre){
+                      return <>
+                        <p>Por:</p>
+                        <Link className="link" to={creador.vermas}>{creador.nombre}</Link>
+                      </>
+                    }
+                  })}
+                </div>
                 <div><p>PRECIO: </p><strong>{contenido.precio}</strong></div>
                 <h3 className="materia">MATERIA</h3>
                 <ul>
@@ -78,8 +90,8 @@ export const Apuntes = () => {
                   })}
                 </ul>
                 <div className="links">
-                <Link className="link" to="/comprar">COMPRAR</Link>
-                <Link className="link" to="/">VER MÁS INFO</Link>
+                <Link className="link azul" to='/estudiantestop/comprar'>COMPRAR</Link>
+                <Link className="link azul" to={contenido.vermas}>VER MÁS INFO</Link>
                 </div>
               </div>
             );
